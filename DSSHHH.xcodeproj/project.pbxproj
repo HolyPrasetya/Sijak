@@ -6,13 +6,47 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F84414FB30187F7F00B788B0 /* DSSHHHMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84414F930187EDB00B788B0 /* DSSHHHMacApp.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F84414B630133F0500B788B0 /* DSSHHH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSSHHH.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F84414E330134CD300B788B0 /* DSSHHH-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DSSHHH-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F84414F830187EA900B788B0 /* DSSHHH-Mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DSSHHH-Mac-Info.plist"; sourceTree = "<group>"; };
+		F84414F930187EDB00B788B0 /* DSSHHHMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSSHHHMacApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F84414DE30134ACD00B788B0 /* Exceptions for "DSSHHH" folder in "DSSHHH" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = F84414B530133F0500B788B0 /* DSSHHH */;
+		};
+		F84414EF30187E4400B788B0 /* Exceptions for "DSSHHH" folder in "DSSHHH-Mac" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ContentView.swift,
+				DSSHHHApp.swift,
+				Info.plist,
+				Views/Judge/JudgeJoinView.swift,
+				Views/Judge/JudgeScoringView.swift,
+				Views/Shared/QRScannerView.swift,
+				Views/Shared/RoleSelectionView.swift,
+			);
+			target = F84414E230134CD300B788B0 /* DSSHHH-Mac */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F84414B830133F0500B788B0 /* DSSHHH */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F84414DE30134ACD00B788B0 /* Exceptions for "DSSHHH" folder in "DSSHHH" target */,
+				F84414EF30187E4400B788B0 /* Exceptions for "DSSHHH" folder in "DSSHHH-Mac" target */,
+			);
 			path = DSSHHH;
 			sourceTree = "<group>";
 		};
@@ -26,12 +60,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F84414E030134CD300B788B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		F84414AD30133F0500B788B0 = {
 			isa = PBXGroup;
 			children = (
+				F84414F930187EDB00B788B0 /* DSSHHHMacApp.swift */,
+				F84414F830187EA900B788B0 /* DSSHHH-Mac-Info.plist */,
 				F84414B830133F0500B788B0 /* DSSHHH */,
 				F84414B730133F0500B788B0 /* Products */,
 			);
@@ -41,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				F84414B630133F0500B788B0 /* DSSHHH.app */,
+				F84414E330134CD300B788B0 /* DSSHHH-Mac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +114,28 @@
 			productReference = F84414B630133F0500B788B0 /* DSSHHH.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F84414E230134CD300B788B0 /* DSSHHH-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F84414EB30134CD300B788B0 /* Build configuration list for PBXNativeTarget "DSSHHH-Mac" */;
+			buildPhases = (
+				F84414DF30134CD300B788B0 /* Sources */,
+				F84414E030134CD300B788B0 /* Frameworks */,
+				F84414E130134CD300B788B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F84414B830133F0500B788B0 /* DSSHHH */,
+			);
+			name = "DSSHHH-Mac";
+			packageProductDependencies = (
+			);
+			productName = "DSSHHH-Mac";
+			productReference = F84414E330134CD300B788B0 /* DSSHHH-Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -81,6 +147,9 @@
 				LastUpgradeCheck = 2660;
 				TargetAttributes = {
 					F84414B530133F0500B788B0 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					F84414E230134CD300B788B0 = {
 						CreatedOnToolsVersion = 26.6;
 					};
 				};
@@ -100,12 +169,20 @@
 			projectRoot = "";
 			targets = (
 				F84414B530133F0500B788B0 /* DSSHHH */,
+				F84414E230134CD300B788B0 /* DSSHHH-Mac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F84414B430133F0500B788B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F84414E130134CD300B788B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -119,6 +196,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F84414DF30134CD300B788B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F84414FB30187F7F00B788B0 /* DSSHHHMacApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +341,11 @@
 				DEVELOPMENT_TEAM = XJYXR6QY65;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DSSHHH/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Sijak";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access is needed to scan the QR code";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Used to connect judges and the monitor over the local WiFi network";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -266,7 +356,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Apple.DSSHHH;
+				PRODUCT_BUNDLE_IDENTIFIER = Apple.Sijak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -288,6 +378,11 @@
 				DEVELOPMENT_TEAM = XJYXR6QY65;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DSSHHH/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Sijak";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access is needed to scan the QR code";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Used to connect judges and the monitor over the local WiFi network";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,7 +393,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Apple.DSSHHH;
+				PRODUCT_BUNDLE_IDENTIFIER = Apple.Sijak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -307,6 +402,82 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F84414EC30134CD300B788B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "DSSHHH-Mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XJYXR6QY65;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DSSHHH-Mac-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sijak";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Used to connect judges and the monitor over the local WiFi network";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Apple.Sijak-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F84414ED30134CD300B788B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "DSSHHH-Mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XJYXR6QY65;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DSSHHH-Mac-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sijak";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Used to connect judges and the monitor over the local WiFi network";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Apple.Sijak-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -327,6 +498,15 @@
 			buildConfigurations = (
 				F84414C230133F0600B788B0 /* Debug */,
 				F84414C330133F0600B788B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F84414EB30134CD300B788B0 /* Build configuration list for PBXNativeTarget "DSSHHH-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F84414EC30134CD300B788B0 /* Debug */,
+				F84414ED30134CD300B788B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

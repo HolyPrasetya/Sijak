@@ -11,7 +11,7 @@ import SwiftUI
 struct DSSHHHApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RoleSelectionView()
         }
     }
 }
