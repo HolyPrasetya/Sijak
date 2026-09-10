@@ -1,6 +1,6 @@
 # Sijak
 
-Digital scoring system for Taekwondo (PSS-style), replacing manual stick scoring. Runs entirely over local WiFi — no server, no internet required.
+Digital scoring system for Taekwondo (DSS-style), replacing manual stick scoring. Runs entirely over local WiFi — no server, no internet required.
 
 ## How it works
 
